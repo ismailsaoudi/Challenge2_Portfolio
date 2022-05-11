@@ -7,6 +7,12 @@ header {
 
 .flex-container{
     display: flex;
-    flex-grow: 10;
-    justify-content: flex-end;
+    flex-grow: 4;
+    justify-content: center ;
+    margin: 2; 
+    background: rgb(2, 51, 68);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    gap: 20px;
+
 }
