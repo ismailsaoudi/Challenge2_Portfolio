@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(172, 16, 16);
+    color: rgb(220, 224, 245);
 }
 
 header {
@@ -10,14 +10,14 @@ header {
     background-size: cover;
     margin: 0.1px;
     padding: 0.1px;
-    color: aliceblue;
+   
 }
 
 .title {
     margin-left: 15px;
 }
 
-.navigation {
+.navigation  {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -47,7 +47,37 @@ header {
       flex-flow: column wrap;
       padding: 0;
     }
+}
 .aboutMe{
     display: flex;
+    height: 25vh;
+    align-items: baseline;
+    justify-content: center;
+    background-image: url(./images/background.jpg);
+}
 
+@media all and (max-width:600px){
+    .aboutMe {
+        flex-flow: column wrap;
+        height: auto;
+        justify-content: center;
+    }
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float: right;
+    width: 70%;
+}
+.work{
+    display: flex;
+    align-items: baseline;
+    height: 50vh;
+}
+.contactMe{
+    display: flex;
+    align-items: baseline;
+    height: 20vh;
 }
