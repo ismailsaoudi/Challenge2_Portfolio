@@ -1,0 +1,24 @@
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#flex-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: nowrap;
+    list-style: none;
+    margin: 0;
+    background: cadetblue;
+}
+#flex-container a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+#navigation a:hover {
+    background: #1565C0;
+  }
