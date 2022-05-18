@@ -1,11 +1,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(220, 224, 245);
+    text-decoration: none;
 }
 
 header {
     background-image: url(./images/background.jpg);
-    size: 25vh;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.1px;
@@ -38,30 +38,50 @@ header {
 }
 
 @media all and (max-width: 800px) {
-    .navigation {
+    .navigation , .aboutMe , .contactMe , .work {
       justify-content: space-around;
+      height: auto;
     }
   } 
   @media all and (max-width: 600px) {
-    .navigation {
+    .navigation , .aboutMe , .contactMe , .work  {
       flex-flow: column wrap;
-      padding: 0;
+      
+     
     }
 }
 .aboutMe{
     display: flex;
-    height: 25vh;
+    height: auto;
     align-items: baseline;
     justify-content: center;
     background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    
 }
 
-@media all and (max-width:600px){
-    .aboutMe {
-        flex-flow: column wrap;
-        height: auto;
-        justify-content: center;
-    }
+
+.work{
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: center;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.contactMe{
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: center;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
 }
 .left{
     float: left;
@@ -70,14 +90,4 @@ header {
 .right{
     float: right;
     width: 70%;
-}
-.work{
-    display: flex;
-    align-items: baseline;
-    height: 50vh;
-}
-.contactMe{
-    display: flex;
-    align-items: baseline;
-    height: 20vh;
 }
